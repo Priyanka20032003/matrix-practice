@@ -1,0 +1,6 @@
+projectKey=Matrix-Practice
+serverUrl=http://localhost:9000
+serverVersion=26.10.0.133078
+dashboardUrl=http://localhost:9000/dashboard?id=Matrix-Practice
+ceTaskId=1ac6a4fe-e5ba-4861-8c38-287fec1e1086
+ceTaskUrl=http://localhost:9000/api/ce/task?id=1ac6a4fe-e5ba-4861-8c38-287fec1e1086

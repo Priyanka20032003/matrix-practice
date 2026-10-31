@@ -48,3 +48,14 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t matrix-practice:latest .
+
+      - name: Test GitHub Secret
+        env:
+          MY_SECRET: ${{ secrets.PRACTICE_SECRET }}
+        run: |
+          if [ -n "$MY_SECRET" ]; then
+            echo "Secret was successfully loaded"
+          else
+            echo "Secret was not found"
+            exit 1
+          fi
